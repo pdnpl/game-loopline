@@ -2,6 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "game-loopline",
   "compatibility_date": "2026-08-01",
+  "routes": [{ "pattern": "loopline.redhippo.app", "custom_domain": true }],
 
   // Assets-only Worker: no `main` entrypoint, no server-side code.
   // Cloudflare serves ./dist straight from the edge cache.
